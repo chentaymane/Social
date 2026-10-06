@@ -8,6 +8,18 @@ A Facebook-like social network: profiles, followers, posts with privacy, comment
 
 The API reference is in [backend/readme.md](backend/readme.md).
 
+## Screenshots
+
+| Feed | Comments and reactions |
+| --- | --- |
+| ![Feed with the post composer, upcoming events and suggestions](docs/screenshots/home.png) | ![A post with its comments open, and edit / delete icons on your own comment](docs/screenshots/post.png) |
+| **Profile** | **Notifications** |
+| ![A private profile with its posts, followers and following](docs/screenshots/profile.png) | ![Follow requests and group invitations to answer, then the latest notifications](docs/screenshots/notifications.png) |
+| **Groups** | **Group page** |
+| ![Group invitations, your groups and groups to discover](docs/screenshots/groups.png) | ![A group with its posts, events, chat and members tabs](docs/screenshots/group.png) |
+| **Private chat** | **Log in** |
+| ![A real-time private conversation](docs/screenshots/chat.png) | ![The log in page](docs/screenshots/login.png) |
+
 ## Features
 
 - Register, log in, log out (cookie sessions)
