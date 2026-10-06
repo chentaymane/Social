@@ -1,4 +1,4 @@
-// next.config.js forwards /api/v1/... to the Go API on http://localhost:8080/...
+// Caddy forwards /api/v1/... to the Go API
 const API = '/api/v1'
 
 async function request(path, options = {}) {
@@ -30,8 +30,4 @@ export const apiUpload = (path, data) => request(path, { method: 'POST', body: f
 
 export const imageUrl = id => `${API}/fs/${id}`
 
-// In dev (next on :3000) connect straight to the Go server; behind Caddy go through /api/v1.
-export function socketUrl() {
-  const { hostname, host, port } = window.location
-  return port === '3000' ? `ws://${hostname}:8080/ws` : `ws://${host}${API}/ws`
-}
+export const socketUrl = () => `ws://${window.location.host}${API}/ws`
